@@ -1,0 +1,23 @@
+Hello everyone my name is Abdulrahman zain I'm studying Business Information Systems 
+I'm excited to share with you my final project of CS50P Course a simple habit tracker 
+designed to make user able add his habits and track his progress visually
+in order to improve his lifestyle now let's dive into the project
+and see it working then later we discuss the how 
+
+The project has four main features Add, mark , delete and dashboard visualization
+to add a habit you will have to get right here give it a name and a description just click the add button right there
+to mark it as done just press the check button
+and if you changed your mind and want to undo what you did you just simply click the redo button here 
+and to delete the habit suppose u don't need it anymore click the trash button then confirm your action now it's deleted
+some of you maybe have wondered what's behind the dashboard button 
+simply a bar chart represents the most repeated habit is Exercise and not only that 
+if we got back quick we might notice the habit cards are clickable and that's maybe for a reason it's a heat map as in github with the help of some visualization libraries I was able to make this
+
+now let's talk about the how it works
+I started by applying what we learned in CS50P. I created project.py using object-oriented programming with a Habit class that handles adding, deleting, marking, unmarking, and generating charts.
+For the interface, it would have made more sense if i just used the command line interface
+I wanted something user friendly so user can interact with it which leads us to the web interface using html, css & flask as in CS50x Finally, I needed a way to store data. I considered JSON but decided to use SQLite because it’s more reliable and fit my needs better.
+
+And that’s it I hope you found it interesting, You can explore the full code in my GitHub repository, linked below. I’d love to hear your feedback and suggestions.
+
+

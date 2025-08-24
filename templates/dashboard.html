@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html style = "background: #111827;">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background:#111827; color:white; text-align:center; margin-top: 40px;">
+    {%  if habits  %}
+     <div class="chart-wrapper">
+        <img src="{{ url_for('static', filename='dashboard.png') }}"style="max-width:100%; height:auto; border-radius:12px; box-shadow:0 0 12px rgba(0,0,0,0.5);" alt="Dashboard Chart">
+     </div>  
+    {%  else  %}
+
+    <div class="empty-state1">
+        <h3>No habits yet!</h3>
+        <p>Start building better habits now !</p>
+        <div style="font-size: 4rem; margin-bottom: 1rem;">🌱</div>
+    </div>
+
+    {%  endif  %}
+</body>
+</html>

@@ -1,0 +1,6 @@
+sqlite3
+datetime
+flask
+plotly
+pandas 
+kaleido

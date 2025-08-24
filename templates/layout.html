@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - Habit Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="container header">
+        <div class="brand">
+            <span class="logo">🗓️</span>
+            <a href="{{ url_for('index') }}">Habit Tracker</a>
+        </div>
+        <nav class="nav">
+            <a href="{{ url_for('dashboard') }}" class="nav-link">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block main %}{% endblock %}
+    </main>
+
+    <footer class="container footer">
+        <small>© {{ 2025 }} Habit Tracker • CS50P Final Project</small>
+    </footer>
