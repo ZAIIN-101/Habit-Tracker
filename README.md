@@ -1,25 +1,12 @@
-# Habit Tracker
-#### Video Demo:  <URL HERE>
-#### Description:
+    # Habit Tracker
+    #### Video Demo:  <https://youtu.be/_GlFSF71S9Q>
+    #### Description:
 
-Hello everyone my name is Abdulrahman zain I'm studying Business Information Systems 
-I'm excited to share with you my final project of CS50P Course a simple habit tracker 
-designed to make user able add his habits and track his progress visually
-in order to improve his lifestyle now let's dive into the project
-and see it working then later we discuss the how 
+    what your project is?
+    My project is simply a Habit Tracker software helps users to track their daily habits so they can see the progress of their habits and improve their lifestyle based on that either on the long or the short term everyone wants his tomorrow better than yesterday right
 
-The project has four main features Add, mark , delete and dashboard visualization
-to add a habit you will have to get right here give it a name and a description just click the add button right there
-to mark it as done just press the check button
-and if you changed your mind and want to undo what you did you just simply click the redo button here 
-and to delete the habit suppose u don't need it anymore click the trash button then confirm your action now it's deleted
-some of you maybe have wondered what's behind the dashboard button 
-simply a bar chart represents the most repeated habit is Exercise and not only that 
-if we got back quick we might notice the habit cards are clickable and that's maybe for a reason it's a heat map as in github with the help of some visualization libraries I was able to make this
+    what each of the files you wrote for the project contains and does?
+    Let's start with project.py this where all unseen magic happens I did all the logic considered as the brain of the whole project I started by importing multiple libraries like sqlite3 , datetime and flask then I started implementing the core which is a Habit class to apply what I learned in the course exactly then continued creating variables like the name of the habit the description of the habit inside the init method then continued implementing class methods like add which handles all the burden of adding a new habit also delete handles the burden of removing the habit also mark which handles the burden of marking the habit as completed today lastly unmark method to undo marking it as complete by mistake then started to choose in which way I will store my data I was thinking of json file versus database then settled on database due to the robust background of sql queries and how databases works and here comes habits.db so I started creating the database plus some queries and testing my queries to make sure everything works fine then I had to make a choice either the user will interact with CLI or GUI I suppose for the sake of the course It would make sense to interact with a CLI with argparse but I figured for the sake of the user he must have visualizations to encourage him using my software so I started designing the website to achieve the purpose of it which is to be simple clean good looking warm to the user's eye so I figured out I have to use HTML implemented in layout.html and also in index.html to make a simple header contains the the title and a simple calendar logo and also the footer contains a text line saying copyrights 2025 made with flask and all of that lastly th body which contains the habits and all the functionallity I figured out to present habits on cards grid every card has its card with total done times and streaks and the butoon to mark it as done or deleting it and also the adding habit sextion which is simple two text input boxes that have add button which talks to the database directly to store the new habit so the software can show it on habits list and all of this wouldn't be achievable without a style.css file that handles all the design and colors burden which leads us to this clean, simple and warm interface lastly test_project.py which handles all the testing process of testing every function how it matches the expectations making sure their behavior is exactly fine and the requirements.txt file which all the libraries are listed there
 
-now let's talk about the how it works
-I started by applying what we learned in CS50P. I created project.py using object-oriented programming with a Habit class that handles adding, deleting, marking, unmarking, and generating charts.
-For the interface, it would have made more sense if i just used the command line interface
-I wanted something user friendly so user can interact with it which leads us to the web interface using html, css & flask as in CS50x Finally, I needed a way to store data. I considered JSON but decided to use SQLite because it’s more reliable and fit my needs better.
-
-And that’s it I hope you found it interesting, You can explore the full code in my GitHub repository, linked below. I’d love to hear your feedback and suggestions.
+    if you debated certain design choices, explaining why you made them ?
+    Of course I was thinking of making the design as a HTML table designed modern but I figured out that it would be like database viewer which I didn't want to so that leads us to the cards design which is very simple and lovely modern that's it
